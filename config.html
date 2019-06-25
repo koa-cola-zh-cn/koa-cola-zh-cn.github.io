@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <title>ko-cola - config</title>
+  <link href="/css/docs.css" rel="stylesheet">
+  <link href="/css/github-markdown.css" rel="stylesheet">
+  <script>
+    window.onunload = function(){
+      var scollTop = document.getElementsByClassName('menu-nav')[0].scrollTop;
+      document.cookie = 'scollTop=' + scollTop;
+    }
+    window.onload = function(){
+      var scrollTop = /scollTop=(\d+)/.test(document.cookie) && RegExp.$1;
+      document.getElementsByClassName('menu-nav')[0].style.overflowY='scroll'
+      document.getElementsByClassName('menu-nav')[0].scrollTop = scrollTop || 0;
+      document.getElementsByClassName('menu-nav')[0].style.overflowY='hidden'
+    }
+  </script>
+</head>
+<body>
+  <div class="menu">
+    <div class="logo">
+      <a href="https://www.github.com/hcnode/koa-cola"><img src="/images/github.png" width="25"></a>&nbsp;&nbsp;Koa-cola
+    </div>
+    <nav class="menu-nav" style="max-height: 87%;" onmouseover="this.style.overflowY='scroll'" onmouseout="this.style.overflowY='hidden'">
+      
+        <ul class="nav">
+          <span>介绍</span>
+          <ul class="nav">
+            
+              <li>
+              
+                 <a href="/index.html">koa-cola是什么?</a>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/ssr.html">SSR和SPA</a>
+              
+              </li>
+            
+              <li>
+              
+                <a href="/universal.html" style="padding:0px">Universal 前后端全栈开发</a>
+                <ul class="nav" style="padding-top:0px">
+                  
+                    <li style="height:28px">
+                      <a href="/universal-router.html">前后端router</a>
+                    </li>
+                  
+                    <li style="height:28px">
+                      <a href="/universal-redux.html">前后端redux</a>
+                    </li>
+                  
+                    <li style="height:28px">
+                      <a href="/universal-component.html">前后端react组件</a>
+                    </li>
+                  
+                    <li style="height:28px">
+                      <a href="/universal-api.html">前后端api</a>
+                    </li>
+                  
+                    <li style="height:28px">
+                      <a href="/universal-validation.html">前后端validation</a>
+                    </li>
+                  
+                </ul>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/d-mvc.html">decorator的mvc开发模式</a>
+              
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class="nav">
+          <span>使用方法</span>
+          <ul class="nav">
+            
+              <li>
+              
+                 <a href="/installation.html">如何使用</a>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/decorators.html">装饰器</a>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/cli.html">Cli命令</a>
+              
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class="nav">
+          <span>Tips</span>
+          <ul class="nav">
+            
+              <li>
+              
+                 <a href="/tip1-react-init.html">初始化react组件数据</a>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/tip2-redux.html">Cola装饰器组件的redux坑</a>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/tip3-inject-global.html">Inject global全局注入</a>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/tip4-cluster.html">cluster集群模式</a>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/tip5-debug.html">调试</a>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/tip6-compile.html">代码编译</a>
+              
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class="nav">
+          <span>目录结构</span>
+          <ul class="nav">
+            
+              <li>
+              
+                <a href="/api.html" style="padding:0px">api</a>
+                <ul class="nav" style="padding-top:0px">
+                  
+                    <li style="height:28px">
+                      <a href="/api-controllers.html">controllers</a>
+                    </li>
+                  
+                    <li style="height:28px">
+                      <a href="/api-models.html">models</a>
+                    </li>
+                  
+                    <li style="height:28px">
+                      <a href="/api-schemas.html">schemas</a>
+                    </li>
+                  
+                    <li style="height:28px">
+                      <a href="/api-responses.html">responses</a>
+                    </li>
+                  
+                </ul>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/config.html" class="active">config</a>
+              
+              </li>
+            
+              <li>
+              
+                 <a href="/public.html">public</a>
+              
+              </li>
+            
+              <li>
+              
+                <a href="/views.html" style="padding:0px">views</a>
+                <ul class="nav" style="padding-top:0px">
+                  
+                    <li style="height:28px">
+                      <a href="/views-pages.html">pages</a>
+                    </li>
+                  
+                    <li style="height:28px">
+                      <a href="/views-app.html">app.tsx</a>
+                    </li>
+                  
+                    <li style="height:28px">
+                      <a href="/views-components.html">components</a>
+                    </li>
+                  
+                </ul>
+              
+              </li>
+            
+          </ul>
+        </ul>
+      
+    </nav>
+  </div>
+  <div class="page">
+    <div class="page-content">
+      <h1>config</h1>
+      <div style="
+          float: right;
+          top: -60px;
+          position: relative;
+          margin-right: 10px;
+      "><a href="https://github.com/koa-cola/website/blob/master/source/config.md">修改</a></div>
+      <h2>global.app.config</h2>
+<p>通过约定<code>/config/</code>一级目录下所有的js文件都会成为 <code>app.config</code> 的属性，运行时会被 env 环境对应的<code>/config/env/</code>下的js配置覆盖。</p>
+<pre><code>&gt; config
+    &gt; env
+        local.js
+        test.js
+        development.js
+        production.js
+    bootstrap.js
+    middlewares.js
+    model.js
+    any_config_you_need.js 
+    ...
+</code></pre>
+<p>比如配置 any_config_you_need.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">exports.module = &#123;</span><br><span class="line">  foo : <span class="string">'bar'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>那么<code>app.config.foo === 'bar'</code></p>
+<p>如果当前是development环境，并且 config/env/development.js 定义以下:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">exports.module = &#123;</span><br><span class="line">  foo : <span class="string">'wow'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>那么<code>any_config_you_need.js</code>的<code>foo</code>就会被覆盖：<code>app.config.foo === 'wow'</code></p>
+<h2>默认配置</h2>
+<h3>config.middlewares</h3>
+<p>自定 koa 中间件的开关。</p>
+<p>cola加载koa中间件时，会根据此配置进行中间件加载。假如没定义此配置，将直接使用默认的中间件。</p>
+<p>cola根据此配置，在<code>/api/middlewares/**</code>定义中间件里抽取加载。</p>
+<p>例如<code>/config/</code>下新增文件<code>myMiddleWares.js</code>, 添加以下代码：</p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  middlewares: &#123;</span><br><span class="line">    <span class="string">"middleware1"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">"koa-static"</span>: <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>那么koa将加载<code>/api/middlewares/middleware1.js</code>中间件，以及cola默认的中间件, 但会把默认加入的<code>koa-static</code>中间件去除。</p>
+
+    </div>
+  </div>
+  <div class="switch-page">
+    
+      <a class="previous" href="/api-responses.html">Previous</a>
+    
+    
+      <a class="next" href="/config-env.html">Next</a>
+    
+  </div>
+</body>
+</html>
